@@ -5,7 +5,8 @@ interface AppStateValue {
         items: { 
             id: number;
             name: string; 
-            price: number; 
+            price: number;
+            quantity: number;
         }[];
     }
 }

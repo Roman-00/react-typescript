@@ -42,15 +42,9 @@ class Cart extends React.Component<Props, State> {
                                 display: this.state.isOpen ? 'block' : 'none'
                             }}>
                                 <ul>
-                                    <li>
-                                        Napoletana
-                                    </li>
-                                    <li>
-                                        Marinara
-                                    </li>
                                     {state.cart.items.map((item) => {
                                         return <li key={item.id}>
-                                            {item.name}
+                                            {item.name} &times; {item.quantity}
                                         </li>
                                     })}
                                 </ul>
